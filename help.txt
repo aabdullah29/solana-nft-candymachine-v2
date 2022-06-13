@@ -1,0 +1,54 @@
+udemy lecture:
+and some other url: https://www.youtube.com/watch?v=AJNxmBDRDAk&ab_channel=Jrej
+
+metaplex: https://docs.metaplex.com/
+git repo: git clone https://github.com/metaplex-foundation/metaplex.git ~/metaplex
+
+step 1: 
+clone from github and install phantom wallet
+
+
+step 2:
+connect phantom wallet with program
+and check that we have an account 
+and we login etc..
+in app/src.App.js
+
+
+step 3:
+clone metaplex repo from "git clone https://github.com/metaplex-foundation/metaplex.git"
+in "~/anchor_task/metaplex/"
+then run => yarn install --cwd ~/anchor_task/metaplex/js/
+
+
+step 4: 
+check metaplex version using this command
+"ts-node ~/anchor_task/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version"
+if error then run "sudo npm install -g ts-node"
+use this command again for check version
+
+
+step 5: 
+new account: 
+solana-keygen new --outfile ~/.config/solana/newdevnetaccount.json
+pubkey: 3LtiehNLJVN1tFHD7isDtUxTmKNejRfXB1gw88HeJyCU 
+solana config set --keypair ~/.config/solana/newdevnetaccount.json
+
+
+step 6: 
+upload on solana using candy 2:
+ts-node ~/anchor_task/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -e devnet -k ~/.config/solana/newdevnetaccount.json -cp config.json ./assets
+
+it's give the wallet address: 
+NFT Contract: 3LtiehNLJVN1tFHD7isDtUxTmKNejRfXB1gw88HeJyCU
+candy machine publickey: 2KTqtUV9yyBFHWNbtnFydcqoEhocbJgwhmAzWNv4cQmU
+
+
+step 7: 
+verify upload nft:
+ts-node ~/anchor_task/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -e devnet -k ~/.config/solana/newdevnetaccount.json
+
+
+step 8:
+build web app
+create new file ".env" in app folder

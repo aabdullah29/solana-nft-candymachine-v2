@@ -1,0 +1,19 @@
+{
+    "name": "Shoes 2",
+    "symbol": "SH2",
+    "image": "2.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "2.png",
+                "type": "image/png"
+            }
+        ],
+        "creators": [
+            {
+                "address": "6nZRR27JKqK1isskNgtib6n6Und7xuJYPhjWfiSUypEd",
+                "share": 100
+            }
+        ]
+    }
+}

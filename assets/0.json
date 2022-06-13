@@ -1,0 +1,19 @@
+{
+    "name": "Shoes 0",
+    "symbol": "SH0",
+    "image": "0.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "creators": [
+            {
+                "address": "6nZRR27JKqK1isskNgtib6n6Und7xuJYPhjWfiSUypEd",
+                "share": 100
+            }
+        ]
+    }
+}
